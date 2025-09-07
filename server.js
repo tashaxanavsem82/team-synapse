@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Team Synapse!');
+  res.send('Welcome to Team Synapse! We are glad to have you here.');
 });
 
 io.on('connection', (socket) => {
