@@ -7,10 +7,10 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Team Synapse! We are glad to have you here.');
+  res.send('Welcome to Team Synapse! Your presence enriches our community.');
 });
 
-io.on('connection', (socket) => {
+oi.on('connection', (socket) => {
   console.log('A user connected');
   socket.on('disconnect', () => {
     console.log('User disconnected');
