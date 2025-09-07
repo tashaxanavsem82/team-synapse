@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to Team Synapse! Your presence enriches our community.');
 });
 
-oi.on('connection', (socket) => {
+io.on('connection', (socket) => {
   console.log('A user connected');
   socket.on('disconnect', () => {
     console.log('User disconnected');
